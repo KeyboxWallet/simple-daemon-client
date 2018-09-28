@@ -26,7 +26,7 @@ usage cases:
 
 + for many cryptocurrencies, sign with keybox hardware.
 
-## multiplyReq
+## multiplyReq.js
 
 give a bip32 path, a peer public key, get the sign result. 
 
