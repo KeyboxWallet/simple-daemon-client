@@ -5,4 +5,8 @@ const client = new wsClient.default ({
     protocols: "json-rpc-server"
 });
 
+client.on('notification', notification => {
+  console.log('notification received', notification)
+});
+
 module.exports = client;

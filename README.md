@@ -2,7 +2,7 @@
 
 This is a demo package for developers who want to integrate keybox to his/her own wallet software. 
 
-To start, you must run [keyboxd](https://github.com/KeyboxWallet/keyboxd) on your PC and connect a keybox hardware via USB or run a [software emulator](https://github.com/KeyboxWallet/soft_wallet) on the same PC.
+To start, you must run [keyboxd](https://github.com/KeyboxWallet/keyboxd) on your PC and connect a keybox hardware via USB or run a [software emulator](https://github.com/KeyboxWallet/software_wallet) on the same PC.
 
 # Files
 
@@ -28,7 +28,7 @@ usage cases:
 
 ## multiplyReq.js
 
-give a bip32 path, a peer public key, get the sign result. 
+give a bip32 path, a peer public key, get the multiply result (ECIES). 
 
 Usage case :
 
