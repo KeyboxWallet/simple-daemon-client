@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jsonrpc-websocket-client": "^0.4.1"
+    "jsonrpc-websocket-client": "^0.5.0"
   }
 }
