@@ -5,6 +5,10 @@ const client = new wsClient.default ({
     protocols: "json-rpc-server"
 });
 
+client.on('closed', d=>{
+   console.log('connection closed');
+});
+
 client.on('notification', notification => {
   console.log('notification received', notification)
 });
