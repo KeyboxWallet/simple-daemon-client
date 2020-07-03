@@ -7,13 +7,16 @@ const txParams = {
     gasLimit: '0x3000',
     to: '0x06fd353aeb1b62bf4c1b34e68a01d2ea6cac6c0e',
     value: '0x39292999',
-    data: '0x'
 };
 
 const tx  = new Tx(txParams);
+tx.raw[6] = tx.getChainId();
+tx.raw[7] = Buffer.from([]);
+tx.raw[8] = Buffer.from([]);
+
 const sTx = tx.serialize();
 const unsignedTx = sTx.toString('base64');
-
+console.log(unsignedTx);
 
 client.open().then( ()=>{
     var devId;
@@ -30,7 +33,7 @@ client.open().then( ()=>{
             if( r.errcode == 0 ) {
                 return client.call("ethereumSignReq", {
 				ver: 1,
-				hdPath: "m/44'/60'/0'/0/0",
+				hdPath: "bip32/m/44'/60'/0'/0/0",
 				unsignedTx,
 			});
             }
