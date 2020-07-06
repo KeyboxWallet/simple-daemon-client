@@ -1,12 +1,12 @@
 const client = require('./client');
-
+const BN = require('bn.js');
 const Tx = require('ethereumjs-tx').FakeTransaction
 const txParams = {
-    nonce: '0x00',
-    gasPrice: '0x0918e472a00',
-    gasLimit: '0x3000',
+    nonce: 0,
+    gasPrice: 1000000000,
+    gasLimit: 10000,
     to: '0x06fd353aeb1b62bf4c1b34e68a01d2ea6cac6c0e',
-    value: '0x39292999',
+    value: new BN('1000000000000000000',10),
 };
 
 const tx  = new Tx(txParams);
