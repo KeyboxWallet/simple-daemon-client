@@ -22,6 +22,7 @@ client.open().then( ()=>{
 				ver: 1,
 				testnet: true,
 				psbt,
+				coin: 'btc',
 				options: {
 					rfc6979: true,
 					graphene_canonize: false

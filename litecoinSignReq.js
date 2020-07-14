@@ -2,7 +2,7 @@ const client = require('./client');
 
 var b =  Buffer.alloc(32, 'a'); // simulate hash
 
-const psbt='cHNidP8BAFICAAAAAY1EweNlfgUUKMyC/O2oeRmC6V9OeYIoJTshGGE+67SpAAAAAAD/////AQrDvgAAAAAAFgAUVVuvlNC6lIGvMwqz8wVhp55TcuYAAAAAAAEBH6rSvgAAAAAAFgAUc6WsMh0IyJ3VXRhRpAVxS8K/CWciBgMJ0lWs5zV3s1ugL8OcmkRZeb5Y7TPkM4kKDHjJ8BS+9hiw8Aw9LAAAgAAAAIAAAACAAAAAAAAAAAAAAA==';
+const psbt='cHNidP8BAFUCAAAAAdvsrnzcLPJzAYgMrcD0M19kCXOwrS5llUVOgO6BC5O3AAAAAAD/////AXA6DwAAAAAAGXapFBLeAWMPkpjcYc6Zgd+D5gctGKy3iKwAAAAAAAEA/QMBAQAAAAABAb04ADR0Q60hgyytqejLCj+YiZ4vt74l8xJdZShHDPLhAQAAAADw////A0BCDwAAAAAAGXapFIak07i7Ljxyvg4AyobbvcqFEGY/iKzscFsAAAAAABYAFIDeP1OcRKv/iNXva4dXZcUzv/MPAAAAAAAAAAAZahdodHRwczovL3RsdGMuYml0YXBzLmNvbQJHMEQCIHiBm3+F8P4dU8EKeP6UxPxJoWRmerT9kFmtyzUpTHUhAiAM+2TXv/UcrJXVXYe3kqbBThm87PJUgKsK7lzd3naY5wEhAqd63QdhCHiY1Wzf+PZL/CBWZzIeJEaiRRyh1troAOZ+AAAAACIGAjx2mQ1jJylA7js84XQqHsS2b3FWvdNBFcEXKpmWO3w2GLDwDD0sAACAAQAAgAAAAIAAAAAAAAAAAAAiAgOG/Rt9dUFuvnRkIrz17RIkUrvLWguv/5K8EETubu9T5hiw8Aw9LAAAgAEAAIAAAACAAAAAAAEAAAAA';
 
 client.open().then( ()=>{
     var devId;
@@ -21,7 +21,7 @@ client.open().then( ()=>{
 				ver: 1,
 				testnet: true,
 				psbt,
-				coin: 'btc',
+				coin: 'ltc',
 				options: {
 					rfc6979: true,
 					graphene_canonize: false
